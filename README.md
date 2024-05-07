@@ -83,44 +83,63 @@ Access the Streamlit UI by navigating to [0.0.0.0:8080]() in you browser and inp
 ## Project Structure
 
 ```
-📦 Assignment05
-├── Diagrams
-│   ├── CFA.png
-│   ├── Data Architecture.ipynb
-│   ├── docker.png
-│   ├── fastapi.png
-│   ├── openai.png
-│   ├── pydantic-logo.png
-│   ├── rag-based_openai_data_architecture.png
-│   ├── snowflake.png
-│   ├── sqlalchemy.png
-│   └── streamlit.png
-├── FastAPI
-│   ├── dockerfile
-│   ├── main.py
-│   └── requirements.txt
-├── JupyterNotebook
-│   ├── DataValidation.ipynb
-│   ├── Upload_clean_webscrape_data.ipynb
-│   └── step1.ipynb
-├── README.md
-├── Scripts
-│   ├── Web_Scraping.py
-│   └── creat_knowledge.py
-├── Streamlit
-│   ├── __init__.py
-│   ├── dockerfile
-│   ├── main.py
-│   ├── pages
-│   │   └── 1_Data_Querying.py
-│   └── requirements.txt
-├── data
-│   ├── Validation_data.csv
-│   ├── cfa_data.csv
-│   └── items.csv
-├── requirements.txt
-└── utils
-    └── URLclass.py
+📦 
+├─ .gitignore
+├─ FastAPI
+│  ├─ dockerfile
+│  ├─ main.py
+│  ├─ requirements.txt
+│  └─ scripts.py
+├─ JupyterNotebook
+│  ├─ .DS_Store
+│  ├─ DataValidation.ipynb
+│  ├─ Upload_clean_webscrape_data.ipynb
+│  ├─ step1.ipynb
+│  ├─ step3.ipynb
+│  └─ step4.ipynb
+├─ Makefile
+├─ README.md
+├─ Scripts
+│  ├─ Question_Generation.py
+│  ├─ Web_Scraping.py
+│  ├─ pdf-parsing 1.py
+│  └─ uploadtopinecone.py
+├─ Streamlit
+│  ├─ data
+│  │  ├─ LOS_summary.md
+│  │  ├─ Validation_data.csv
+│  │  ├─ cfa_data.csv
+│  │  ├─ items.csv
+│  │  ├─ openai_answers.csv
+│  │  ├─ output.csv
+│  │  ├─ qna_data_seta.csv
+│  │  ├─ qna_data_setb.csv
+│  │  ├─ sample-level-II-itemset-questions_text.txt
+│  │  ├─ sample-level-III-itemset-questions_text.txt
+│  │  └─ sample-level-i-questions_text.txt
+│  ├─ dockerfile
+│  ├─ main.py
+│  ├─ pages
+│  │  ├─ 1_Generated_Q&A.py
+│  │  ├─ 2_Question_Analysis.py
+│  │  └─ 3_Question_GPT.py
+│  └─ requirements.txt
+├─ data
+│  ├─ LOS_summary.md
+│  ├─ Validation_data.csv
+│  ├─ cfa_data.csv
+│  ├─ items.csv
+│  ├─ openai_answers.csv
+│  ├─ output.csv
+│  ├─ qna_data_seta.csv
+│  ├─ qna_data_setb.csv
+│  ├─ sample-level-II-itemset-questions_text.txt
+│  ├─ sample-level-III-itemset-questions_text.txt
+│  └─ sample-level-i-questions_text.txt
+├─ docker-compose.yaml
+├─ requirements.txt
+└─ utils
+   └─ URLclass.py
 ```
 
 
