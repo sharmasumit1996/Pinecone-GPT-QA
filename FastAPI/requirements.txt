@@ -1,0 +1,11 @@
+python-dotenv
+bcrypt
+snowflake-sqlalchemy
+pandas
+streamlit
+fastapi
+pinecone-client
+langchain_openai
+pydantic
+openai
+uvicorn

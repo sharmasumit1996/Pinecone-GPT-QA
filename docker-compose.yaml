@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  streamlit:
+    build:
+      context: ./Streamlit
+      dockerfile: dockerfile
+    ports:
+      - "8503:8503"
+    networks:
+      - app-network
+    env_file:
+      - .env    
+
+  fastapi:
+    build:
+      context: ./FastAPI
+      dockerfile: dockerfile
+    ports:
+      - "8000:8000"
+    networks:
+      - app-network
+    env_file:
+      - .env
+      
+networks:
+  app-network:
+    driver: bridge
